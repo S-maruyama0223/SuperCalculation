@@ -91,51 +91,51 @@ print(variable) // コンソール出力はprint()を使います。行末に改
 
 ///*---------------------------------------*/
 
-// クラスの書き方は他のオブジェクト指向型言語と大差ありません。
-class Class {
-    var value = 10
-    // lazyキーワードをつけるとアクセスされた時に初めて初期化されます。
-    // 定義した段階では値が確定していないので、インスタンスプロパティにアクセスできます。
-    lazy var lazyValue = value * 40
-
-    // swiftにはプロパティの値を監視出来るプロパティオブザーバーという仕組みもあります。
-    // 構文は以下です。
-    var num = 0 {
-        willSet {
-            print("numの値が \(newValue) に変更されます")
-            value = 5
-        }
-        didSet {
-            print("numの値が \(oldValue) から \(num) に変更されました")
-        }
-    }
-
-    init() {
-        print(lazyValue)
-        print("初期化時点でのnumの値は \(num) です")
-    }
-}
-
-let classInstance1 = Class()
-classInstance1.num = 1
-
-struct Struct {
-    // Struct(構造体)もほとんどクラスと同じように扱えます。
-    // ただしStructは値型、クラスは参照型です。
-    // Structをコピーした値は、コピー元に影響を与えません
-    var value:Int
-
-    init() {
-        value = 5
-    }
-}
-
-var structInstance1 = Struct()
-var structInstance2 = structInstance1
-structInstance2.value = 999
-print("構造体のコピー先:\(structInstance2.value), 構造体のコピー元: \(structInstance1.value)")
-
-var classInstance2 = classInstance1
-classInstance2.value = 999
-print("クラスのコピー先:\(classInstance2.value), クラスのコピー元: \(classInstance1.value)")
-
+//// クラスの書き方は他のオブジェクト指向型言語と大差ありません。
+//class Class {
+//    var value = 10
+//    // lazyキーワードをつけるとアクセスされた時に初めて初期化されます。
+//    // 定義した段階では値が確定していないので、インスタンスプロパティにアクセスできます。
+//    lazy var lazyValue = value * 40
+//
+//    // swiftにはプロパティの値を監視出来るプロパティオブザーバーという仕組みもあります。
+//    // 構文は以下です。
+//    var num = 0 {
+//        willSet {
+//            print("numの値が \(newValue) に変更されます")
+//            value = 5
+//        }
+//        didSet {
+//            print("numの値が \(oldValue) から \(num) に変更されました")
+//        }
+//    }
+//
+//    init() {
+//        print(lazyValue)
+//        print("初期化時点でのnumの値は \(num) です")
+//    }
+//}
+//
+//let classInstance1 = Class()
+//classInstance1.num = 1
+//
+//struct Struct {
+//    // Struct(構造体)もほとんどクラスと同じように扱えます。
+//    // ただしStructは値型、クラスは参照型です。
+//    // Structをコピーした値は、コピー元に影響を与えません
+//    var value:Int
+//
+//    init() {
+//        value = 5
+//    }
+//}
+//
+//var structInstance1 = Struct()
+//var structInstance2 = structInstance1
+//structInstance2.value = 999
+//print("構造体のコピー先:\(structInstance2.value), 構造体のコピー元: \(structInstance1.value)")
+//
+//var classInstance2 = classInstance1
+//classInstance2.value = 999
+//print("クラスのコピー先:\(classInstance2.value), クラスのコピー元: \(classInstance1.value)")
+//
