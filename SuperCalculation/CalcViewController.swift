@@ -28,6 +28,7 @@ class CalcViewController: UIViewController {
     @IBAction func tapCalcButton(_ sender: Any) {
         // 計算ボタンを押した時の処理を記述します。
         print(selectedIndex)
+        fourArithmeticSegment.printSelectedIndex()
     }
 
     // このメソッドは今回使いませんが、各UIパーツにはこのようなアクションメソッドが用意されています。
@@ -35,5 +36,12 @@ class CalcViewController: UIViewController {
         print(sender.selectedSegmentIndex)
     }
 
+}
+
+// 外部から他のクラスのメソッドやプロパティを拡張することが出来ます。
+extension UISegmentedControl {
+    func printSelectedIndex() {
+        print(self.selectedSegmentIndex)
+    }
 }
 
