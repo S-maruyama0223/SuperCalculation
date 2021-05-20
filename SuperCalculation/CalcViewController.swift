@@ -19,7 +19,7 @@ class CalcViewController: UIViewController {
 
     private var selectedIndex:Int {
         get {
-            return 0
+            return <#計算して返す値を入力します#>
         }
         set {
         }
