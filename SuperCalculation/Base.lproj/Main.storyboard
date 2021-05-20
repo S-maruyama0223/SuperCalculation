@@ -88,8 +88,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="argTextField1" destination="7ks-Q3-COr" id="T2a-co-oCf"/>
                         <outlet property="argTextField2" destination="L2g-Ce-PnZ" id="CDG-lB-9ki"/>
-                        <outlet property="argTextfield1" destination="7ks-Q3-COr" id="JbM-7z-gLZ"/>
                         <outlet property="fourArithmeticSegment" destination="jCf-j4-Azo" id="BKa-bV-Q8p"/>
                         <outlet property="resultLabel" destination="FcV-U1-3E3" id="cQB-UD-ktd"/>
                     </connections>

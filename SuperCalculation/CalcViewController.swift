@@ -12,14 +12,14 @@ class CalcViewController: UIViewController {
 
     // @IBxxxが接頭辞としてついているものはGUIで設定したものです。
     // IBはInterface Builderの略です。
-    @IBOutlet weak private var argTextfield1: UITextField!
+    @IBOutlet weak private var argTextField1: UITextField!
     @IBOutlet weak private var argTextField2: UITextField!
     @IBOutlet weak private var fourArithmeticSegment: UISegmentedControl!
     @IBOutlet weak private var resultLabel: UILabel!
 
     private var selectedIndex:Int {
         get {
-            return <#Int型の値を返します#>
+            return 0
         }
         set {
         }
